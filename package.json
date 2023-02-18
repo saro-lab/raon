@@ -1,0 +1,34 @@
+{
+  "name": "raon",
+  "version": "0.0.2",
+  "license": "MIT",
+  "description": "A library that automatically calls loading when scrolling down",
+  "keywords": [
+    "scroll",
+    "typescript"
+  ],
+  "homepage": "https://github.com/saro-lab/raon",
+  "author": {
+    "name": "PARK Yong Seo",
+    "email": "j@saro.me",
+    "url": "https://gs.saro.me"
+  },
+  "bugs": {
+    "url": "https://github.com/saro-lab/raon/issues",
+    "email": "j@saro.me"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "scroll-loader": "^1.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
