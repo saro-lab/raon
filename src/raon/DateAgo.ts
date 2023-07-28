@@ -13,8 +13,8 @@ export class DateAgo {
   public static readonly month = 'month';
   public static readonly year = 'year';
 
-  public unitIndexOf(unit: string) {
-    switch (unit) {
+  public get unitIndex() {
+    switch (this.unit) {
       case DateAgo.second: return 0;
       case DateAgo.minute: return 1;
       case DateAgo.hour: return 2;
