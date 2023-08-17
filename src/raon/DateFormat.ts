@@ -24,23 +24,23 @@ export class DateFormat {
   }
 
   public plusDays(days: number): DateFormat {
-    return DateFormat.parseByTimeMillis(this.date.getTime() + (days * 8640000));
+    return DateFormat.parseByTimeMillis(this.timeMillis + (days * 86400000));
   }
 
   public plusHours(hours: number): DateFormat {
-    return DateFormat.parseByTimeMillis(this.date.getTime() + (hours * 360000));
+    return DateFormat.parseByTimeMillis(this.timeMillis + (hours * 3600000));
   }
 
   public plusMinutes(minutes: number): DateFormat {
-    return DateFormat.parseByTimeMillis(this.date.getTime() + (minutes * 6000));
+    return DateFormat.parseByTimeMillis(this.timeMillis + (minutes * 60000));
   }
 
   public plusSeconds(seconds: number): DateFormat {
-    return DateFormat.parseByTimeMillis(this.date.getTime() + (seconds * 1000));
+    return DateFormat.parseByTimeMillis(this.timeMillis + (seconds * 1000));
   }
 
   public plusTimeMillis(timeMillis: number): DateFormat {
-    return DateFormat.parseByTimeMillis(this.date.getTime() + timeMillis);
+    return DateFormat.parseByTimeMillis(this.timeMillis + timeMillis);
   }
 
   public minusYears(years: number): DateFormat { return this.plusYears(-years); }
@@ -59,6 +59,7 @@ export class DateFormat {
   public get second(): number { return this.date.getSeconds(); }
   public get millisecond(): number { return this.date.getMilliseconds(); }
   public get timeMillis(): number { return this.date.getTime(); }
+  public get unixTime(): number { return Math.floor(this.timeMillis / 1000); }
   public get lastDayOfMonth(): number {
     const date = new Date(this.date.getTime());
     date.setDate(1);
@@ -120,6 +121,10 @@ export class DateFormat {
 
   public static parseByUnixTime(unixTime: number): DateFormat {
     return DateFormat.parseByTimeMillis(unixTime * 1000);
+  }
+
+  public static now(): DateFormat {
+    return new DateFormat(new Date());
   }
 
   public static parseByFormat(date: string, format: string): DateFormat {

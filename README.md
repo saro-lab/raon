@@ -7,6 +7,6 @@
 - https://www.npmjs.com/package/raon
 
 ```
-"raon": "^0.0.6"
+"raon": "^0.0.7"
 ```
 
