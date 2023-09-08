@@ -54,6 +54,7 @@ export class ScrollLoader {
     }
 
     public destroy() {
+        this._callbackNeedNextPage = () => {};
         this._on = false;
         window.removeEventListener('scroll', this._event, true);
         window.removeEventListener('resize', this._event, true);
