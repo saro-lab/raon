@@ -5,7 +5,7 @@
 - https://www.npmjs.com/package/raon
 
 ```
-"raon": "^1.0.0"
+"raon": "^1.0.2"
 ```
 
 ## Document

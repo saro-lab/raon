@@ -42,7 +42,7 @@ export class Locate {
 
     public get fullPath(): string {
         const params = this.params.map(e => e.url).join('&');
-        return this.path + (params ? `?${params}` : '') + this.path;
+        return this.path + (params ? `?${params}` : '');
     }
 
     public getParameters(key: string): string[] {
