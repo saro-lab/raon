@@ -1,5 +1,3 @@
-> This is a test version !!!!
-
 # Raon
 - A Javascript Utility
 
@@ -7,6 +5,18 @@
 - https://www.npmjs.com/package/raon
 
 ```
-"raon": "^0.0.7"
+"raon": "^1.0.0"
 ```
 
+## Document
+- Date Format
+- Locate
+- Route Back Scroll
+- [Scroll Loader](./document/scroll-loader.md)
+
+## Project Used
+- [Anissia](https://github.com/anissia-net/anissia-web)
+
+## Project Info
+- typescript
+- yarn 3.x
