@@ -9,12 +9,21 @@ export class DateFormat {
     }
   }
 
+  public onlyDate(): DateFormat {
+    const date = this.toDate();
+    date.setHours(0);
+    date.setMinutes(0);
+    date.setSeconds(0);
+    date.setMilliseconds(0);
+    return new DateFormat(date);
+  }
+
   public plusYears(years: number): DateFormat {
     return this.plusMonths(years * 12);
   }
 
   public plusMonths(months: number): DateFormat {
-    const date = this.date;
+    const date = this.toDate();
     const day = date.getDate();
     date.setDate(1);
     date.setMonth(date.getMonth() + months + 1);
@@ -101,6 +110,10 @@ export class DateFormat {
     now = Math.floor(now / 12);
     time = Math.floor(time / 12);
     return new DateAgo(DateAgo.year, now - time);
+  }
+
+  public diffDays(date: DateFormat): number {
+    return Math.floor(date.onlyDate().timeMillis - this.onlyDate().timeMillis / 86400000);
   }
 
   public format(format: string): string {
