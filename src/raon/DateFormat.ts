@@ -113,7 +113,7 @@ export class DateFormat {
   }
 
   public diffDays(date: DateFormat): number {
-    return Math.floor(date.onlyDate().timeMillis - this.onlyDate().timeMillis / 86400000);
+    return Math.floor((date.onlyDate().timeMillis - this.onlyDate().timeMillis) / 86400000);
   }
 
   public format(format: string): string {
