@@ -5,13 +5,14 @@
 - https://www.npmjs.com/package/raon
 
 ```
-"raon": "^1.0.4"
+"raon": "^1.0.5"
 ```
 
 ## Document
 - Date Format
 - Locate
 - Route Back Scroll
+- SingleLock
 - [Scroll Loader](./document/scroll-loader.md)
 
 ## Project Used

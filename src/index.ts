@@ -5,6 +5,7 @@ import {LocateParam} from "./raon/LocateParam";
 import { RouteBackHistory } from "./raon/RouteBackHistory";
 import { RouteBackScroll } from "./raon/RouteBackScroll";
 import { ScrollLoader, ScrollCallback, ScrollLoaderOptions } from "./raon/ScrollLoader";
+import { SingleLock } from "./raon/SingleLock";
 import ko from "./raon/lang/ko"
 
 export {
@@ -12,5 +13,6 @@ export {
     Locate, LocateParam,
     RouteBackHistory, RouteBackScroll,
     ScrollLoader, ScrollCallback, ScrollLoaderOptions,
+    SingleLock,
     ko,
 }
