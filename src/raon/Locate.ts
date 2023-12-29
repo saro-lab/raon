@@ -73,6 +73,10 @@ export class Locate {
         return this.delParameter(key).addParameter(key, value);
     }
 
+    public isEquals(locate: Locate): boolean {
+        return this.fullPath == locate.fullPath;
+    }
+
     public get clone(): Locate {
         const lo = new Locate('');
         lo.path = this.path;
