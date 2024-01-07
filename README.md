@@ -5,7 +5,7 @@
 - https://www.npmjs.com/package/raon
 
 ```
-"raon": "^1.0.6"
+"raon": "^1.0.7"
 ```
 
 ## Document
@@ -13,6 +13,7 @@
 - Locate
 - SingleLock
 - [Scroll Loader](./document/scroll-loader.md)
+- Zooms
 
 ## Project Used
 - [Anissia](https://github.com/anissia-net/anissia-web)
