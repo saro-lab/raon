@@ -31,7 +31,6 @@ export class Zooms {
       // @ts-ignore
       const touches = event.touches;
       if (touches.length == 2) {
-        try { event.preventDefault(); } catch (e) {}
         this.__startDistance = this.calculateDistance(touches)
       }
     });
@@ -39,7 +38,6 @@ export class Zooms {
       // @ts-ignore
       const touches = event.touches;
       if (touches.length == 2) {
-        try { event.preventDefault(); } catch (e) {}
         const currentDistance = this.calculateDistance(touches);
         const diff = (currentDistance - this.__startDistance) / this._sensitivity;
         if (Math.abs(diff) > 1) {
