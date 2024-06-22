@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"]\
+            ["typescript", "patch:typescript@npm%3A5.5.2#~builtin<compat/typescript>::version=5.5.2&hash=14eedb"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -38,16 +38,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["raon", "workspace:."],\
-            ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"]\
+            ["typescript", "patch:typescript@npm%3A5.5.2#~builtin<compat/typescript>::version=5.5.2&hash=14eedb"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-47de0b8a47-f61375590b.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.5.2#~builtin<compat/typescript>::version=5.5.2&hash=14eedb", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-607639be18-9d89bac0de.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"]\
+            ["typescript", "patch:typescript@npm%3A5.5.2#~builtin<compat/typescript>::version=5.5.2&hash=14eedb"]\
           ],\
           "linkType": "HARD"\
         }]\
